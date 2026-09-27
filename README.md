@@ -1,90 +1,61 @@
-# 📚 Algoritmos en Python
+# Algorithms
 
-Este repositorio ofrece una amplia colección de algoritmos y ejemplos prácticos implementados en Python. Su propósito es servir como referencia y material de estudio para estudiantes, entusiastas y profesionales interesados en las ciencias de los algoritmos, cubriendo desde conceptos básicos hasta temas avanzados.
+Colección de scripts en Python (y algo de C) para estudiar Informática, organizada como una malla curricular: cada carpeta agrupa los scripts por el tema que enseñan, de lo básico a lo avanzado.
 
----
+## Estructura
 
-## 📂 Contenido del Repositorio
+| Carpeta | Contenido |
+|---|---|
+| [`01-fundamentos-de-programacion`](01-fundamentos-de-programacion/) | Entrada y salida, condicionales, ciclos, cadenas, funciones, archivos y patrones |
+| [`02-programacion-orientada-a-objetos`](02-programacion-orientada-a-objetos/) | Clases y objetos (espacio reservado) |
+| [`03-estructuras-de-datos`](03-estructuras-de-datos/) | Listas enlazadas, pilas y colas, árboles, tablas hash |
+| [`04-algoritmos`](04-algoritmos/) | Búsqueda, ordenamiento, recursividad, grafos y técnicas de resolución |
+| [`05-matematicas-computacionales`](05-matematicas-computacionales/) | Teoría de números y fractales |
+| [`06-inteligencia-artificial`](06-inteligencia-artificial/) | Algoritmos genéticos |
+| [`07-arquitectura-y-logica-digital`](07-arquitectura-y-logica-digital/) | Puertas lógicas y sistema binario |
+| [`08-herramientas-y-automatizacion`](08-herramientas-y-automatizacion/) | Scripts de utilidad y automatización |
+| [`400_ejercicios_python`](400_ejercicios_python/) | Colección de 400 ejercicios resueltos, con su propia numeración |
 
-### 1. [📂 **01. Miscellaneous**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/01.Miscellaneous)  
-Incluye una variedad de algoritmos y ejercicios misceláneos para reforzar conceptos básicos y avanzados. Es ideal para repasar y explorar temas diversos en algoritmos.
+Cada carpeta tiene su propio `README.md` con los temas que cubre y la lista de scripts. Los archivos marcados como "Por desarrollar" son scripts vacíos pendientes de implementar.
 
-### 2. [📂 **02. 400 Ejercicios Python**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/02.400_ejercicios_python)  
-Contiene 400 ejercicios resueltos en Python, ideales para principiantes y avanzados. Este recurso abarca temas desde estructuras de datos hasta aplicaciones de inteligencia artificial.
+## Dónde dejar un script nuevo
 
-### 3. [📂 **03. Algorithms Genetic**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/03.Algorithms_genetic)  
-Presenta implementaciones de algoritmos genéticos, ilustrando técnicas de optimización inspiradas en procesos evolutivos.
+| Si el script trata de... | Va en |
+|---|---|
+| `input`, `print`, fórmulas, conversiones | `01-fundamentos-de-programacion/01-entrada-salida-y-operaciones` |
+| `if / elif / else` | `01-fundamentos-de-programacion/02-condicionales` |
+| `while`, acumuladores, menús | `01-fundamentos-de-programacion/03-ciclos` |
+| Texto, palíndromos, vocales | `01-fundamentos-de-programacion/04-cadenas-de-texto` |
+| Funciones definidas por el usuario | `01-fundamentos-de-programacion/05-funciones` |
+| Leer o escribir archivos | `01-fundamentos-de-programacion/06-manejo-de-archivos` |
+| Figuras con asteriscos | `01-fundamentos-de-programacion/07-patrones-y-figuras` |
+| Clases, herencia, polimorfismo | `02-programacion-orientada-a-objetos` |
+| Nodos, pilas, colas, árboles, tablas hash | `03-estructuras-de-datos/<estructura>` |
+| Buscar un elemento | `04-algoritmos/01-busqueda/<método>` |
+| Ordenar | `04-algoritmos/02-ordenamiento` |
+| Una función que se llama a sí misma | `04-algoritmos/03-recursividad` |
+| Nodos y aristas, caminos | `04-algoritmos/04-grafos` |
+| Problemas tipo entrevista | `04-algoritmos/05-tecnicas-de-resolucion` |
+| Números primos, MCD, fractales | `05-matematicas-computacionales` |
+| Algoritmos genéticos | `06-inteligencia-artificial` |
+| AND, OR, NOT, binario | `07-arquitectura-y-logica-digital` |
+| Descargas, correo, archivos, git | `08-herramientas-y-automatizacion` |
 
-### 4. [📂 **04. Recursion**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/04.Recursion)  
-Ejercicios y ejemplos prácticos que abarcan temas básicos y avanzados de recursión, incluyendo árboles y algoritmos de búsqueda.
+Si un script podría ir en varias carpetas, va en el tema principal que enseña.
 
-### 5. [📂 **05. Logic Gates**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/05.logic_gates)  
-Implementaciones y simulaciones de puertas lógicas, esenciales para comprender los fundamentos de la lógica digital y la computación.
+## Requisitos
 
-### 6. [📂 **06. Recursive**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/06.Recursive)  
-Ofrece ejercicios organizados por nivel de dificultad:  
-- **Basic Recursion:** Cálculo de factoriales y Fibonacci.  
-- **Intermediate Recursion:** Búsqueda binaria recursiva.  
-- **Advanced Recursion:** Torres de Hanói y backtracking.
+- Python 3.x
+- Dependencias de algunos scripts: `pip install -r requirements.txt`
 
-### 7. [📂 **07. Tools**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/07.Tools)  
-Recopilación de herramientas y utilidades para desarrollar y analizar algoritmos.
+## Uso
 
-### 8. [📂 **08. UNAB Informática**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/08.UNAB_informatica)  
-Material relacionado con el curso de informática de la Universidad Andrés Bello, incluyendo apuntes y ejercicios.
+```bash
+git clone https://github.com/Caupolicanafulvicollis/Algorithms.git
+cd Algorithms
+python 04-algoritmos/01-busqueda/02-binaria/Binary_search.py
+```
 
-### 9. [📂 **09. HackerRank**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/09.HackerRank)  
-Contiene soluciones a desafíos de programación en HackerRank, útiles para prepararse para entrevistas técnicas.
+## Licencia
 
-### 10. [📂 **10. Coddy.tech**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/10.coddy.tech)  
-Ejercicios interactivos y recursos relacionados con la plataforma Coddy.tech para el aprendizaje dinámico de programación.
-
-### 11. [📂 **Miscellaneous**](https://github.com/Caupolicanafulvicollis/Algorithms/tree/main/miscellaneous)  
-Material adicional que no encaja en otras categorías, ofreciendo recursos diversos para el aprendizaje de algoritmos.
-
----
-
-## 🛠️ Tecnologías Utilizadas
-
-- **Lenguaje de Programación:** Python 3.x  
-- **Entorno de Desarrollo:** Scripts y notebooks organizados temáticamente para facilitar el aprendizaje.
-
----
-
-## 🚀 Cómo Utilizar este Repositorio
-
-1. **Clonar el Repositorio:**  
-   ```bash
-   git clone https://github.com/Caupolicanafulvicollis/Algorithms.git
-   cd Algorithms
-   ```
-
-2. **Explorar las Carpetas:**  
-   Navega por los directorios para identificar los temas de tu interés.
-
-3. **Ejecutar los Scripts:**  
-   Asegúrate de tener Python 3.x instalado. Ejecuta los ejemplos desde un IDE o directamente en la terminal.
-
-4. **Modificar y Experimentar:**  
-   Siéntete libre de personalizar los algoritmos para adaptarlos a tus necesidades y profundizar en su funcionamiento.
-
----
-
-## 👥 Contribuciones
-
-¡Tu colaboración es bienvenida!  
-- **Reporta Errores:** Si encuentras un problema, abre un _issue_.  
-- **Propón Mejoras:** Sugiere actualizaciones o nuevas funcionalidades.  
-- **Envía Pull Requests:** Implementa tus mejoras y compártelas con la comunidad.
-
----
-
-## 📝 Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo `LICENSE` para más detalles.
-
----
-
-## 🌟 ¡Gracias!
-
-Gracias por tu interés en este repositorio. Explora, aprende y contribuye para mejorar este recurso y fomentar el aprendizaje colectivo. 🚀
+MIT. Ver [`LICENSE`](LICENSE).
