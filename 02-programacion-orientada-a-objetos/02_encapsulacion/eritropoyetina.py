@@ -36,7 +36,7 @@ epo = Eritropoyetina(10.0)
 epo.reportar()
 epo.estimular_eritropoyesis()
 epo.reportar()
-
+    
 epo.transcurrir_horas(10)
 epo.reportar()
 epo.estimular_eritropoyesis()
