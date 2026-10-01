@@ -33,4 +33,18 @@ class Eritropoyetina:
         print(f"EPO: {self.concentracion:.2f} mU/mL, {estado}, eritrocitos estimulados: {self.eritrocitos_estimulados}")
 
 epo = Eritropoyetina(10.0)
+epo.reportar()
+epo.estimular_eritropoyesis()
+epo.reportar()
+
+epo.transcurrir_horas(10)
+epo.reportar()
+epo.estimular_eritropoyesis()
+epo.reportar()
+
+epo.transcurrir_horas(5)
+epo.reportar()
+epo.estimular_eritropoyesis()
+epo.reportar()
+
 epo.concentracion = -5
